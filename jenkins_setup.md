@@ -23,9 +23,15 @@
 #
 #
 ## Configuring Jenkins Build to trigger with a push to the Code Repository
-Click "New Item" in the Jenkins dashboard
-Type in a name for the item
-Select "Freestyle Project" and click the "OK" button
+* Click "New Item" in the Jenkins dashboard
+* Type in a name for the item
+* Select "Freestyle Project" and click the "OK" button
+* Click the radial button next to Git
+* Enter url to repo (https://github.com/srchap78/examensarbete) in the Repository URL Box
+* Check the box next too GitHub hook trigger for GITScm polling
+* Click Build step and select execute shell
+* Enter testcafe "chrome:headless" tests in the command box
+* Click save
 
 
 
