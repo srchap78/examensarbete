@@ -4,31 +4,31 @@ To download please goto this [link](https://ubuntu.com/download/server). <br>
 Follow the installation guide [here](https://ubuntu.com/tutorials/install-ubuntu-server#1-overview).
 #
 The following packages are required:
-- [ ] Node.js and NPM
-- [ ] Java Runtime Environment
-- [ ] Google Chrome
-- [ ] Jenkins
+1. Node.js and NPM
+2. Java Runtime Environment
+3. Google Chrome
+4. Jenkins
 #
 ## **You may be required to enter the user password when installing packages and you will be asked if you want to install by typing "Y" or "N." These steps are not listed in the instructions below but enter the user password and type "Y" when prompted.**
 #
 #
 ## Updating Linux packages
-- [ ] Type the following command to update all packages:
+Type the following command to update all packages:
 ```
 sudo apt update
 ```
-- [ ] Type the following command to install upgrades:
+Type the following command to install upgrades:
 ```
 sudo apt upgrade
 ```
 #
 #
 ## Node.js and NPM
-- [ ] Type the following command to install Node.js
+Type the following command to install Node.js
 ```
 sudo apt install nodejs
 ```
-- [ ] Type the following command to install NPM
+Type the following command to install NPM
 ```
 sudo apt install npm
 ```
@@ -36,7 +36,7 @@ sudo apt install npm
 #
 ## Java Runtime Environment
 This is needed for Jenkins
-- [ ] Type the following command to install JRE 11
+Type the following command to install JRE 11
 ```
 sudo apt install openjdk-11-jre-headless 
 ```
@@ -44,12 +44,12 @@ sudo apt install openjdk-11-jre-headless
 #
 ## Google Chrome
 To install Google Chrome, type the following commands:<br><br>
-- [ ] First, add the Google Chrome repository on your system using the following command: 
+First, add the Google Chrome repository on your system using the following command: 
 
 ```
 $ wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - 
 ```
-- [ ] Type this command to add the package repository: 
+Type this command to add the package repository: 
 ```
 sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
 ```
@@ -65,23 +65,23 @@ sudo apt-get install google-chrome-stable
 ## Jenkins
 Type the following commands to install Jenkins. Run each command separately.
 #
-- [ ] Jenkins has its own repository for Linux systems… Run the command below to add its repository key to Ubuntu:
+Jenkins has its own repository for Linux systems… Run the command below to add its repository key to Ubuntu:
 ```
 wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | sudo apt-key add -
 
 ```
-- [ ] Then run the command below to add the package repository (all one line):
+Then run the command below to add the package repository (all one line):
 ```
 sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list
 
 ```
 Now install Jenkins with the followign two commands:<br>
-- [ ] This command updates packages
+This command updates packages
 ```
 sudo apt update
 
 ```
-- [ ] This command installs Jenkins:
+This command installs Jenkins:
 ```
 sudo apt install jenkins
 ```
