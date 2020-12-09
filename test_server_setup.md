@@ -5,9 +5,10 @@ Follow the installation guide [here](https://ubuntu.com/tutorials/install-ubuntu
 #
 The following packages are required:
 1. Node.js and NPM
-2. Java Runtime Environment
-3. Google Chrome
-4. Jenkins
+2. Testcafe
+3. Java Runtime Environment
+4. Google Chrome
+5. Jenkins
 #
 ## **You may be required to enter the user password when installing packages and you will be asked if you want to install by typing "Y" or "N." These steps are not listed in the instructions below but enter the user password and type "Y" when prompted.**
 #
@@ -31,6 +32,14 @@ sudo apt install nodejs
 Type the following command to install NPM
 ```
 sudo apt install npm
+```
+#
+#
+## Testcafe
+Type the following command to install testcafe globally
+```
+sudo npm install -g testcafe
+
 ```
 #
 #
