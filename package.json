@@ -1,0 +1,9 @@
+{
+    "scripts": {
+        "test": "testcafe chrome ./tests/*.js -r spec,json:reports/report.json"   
+    },
+    "dependencies": {
+        "testcafe": "^1.9.4"
+    },
+    "type": "module"
+}
