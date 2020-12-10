@@ -22,7 +22,7 @@
 ### _**Initial setup should now be complete**_
 #
 #
-## Configuring Jenkins Build to trigger with a push to the Code Repository
+# Configuring Jenkins Build to trigger with a push to the Code Repository
 * Click "New Item" in the Jenkins dashboard
 * Type in a name for the item
 * Select "Freestyle Project" and click the "OK" button
